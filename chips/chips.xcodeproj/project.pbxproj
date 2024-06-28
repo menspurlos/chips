@@ -13,6 +13,11 @@
 		FAC6F5F42C2E46D6005410F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC6F5F22C2E46D6005410F5 /* Main.storyboard */; };
 		FAC6F5F62C2E46D8005410F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC6F5F52C2E46D8005410F5 /* Assets.xcassets */; };
 		FAC6F5F92C2E46D8005410F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC6F5F72C2E46D8005410F5 /* LaunchScreen.storyboard */; };
+		FAC6F6022C2E47A0005410F5 /* ChipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6F6012C2E47A0005410F5 /* ChipsView.swift */; };
+		FAC6F6052C2E47BD005410F5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAC6F6042C2E47BD005410F5 /* SnapKit */; };
+		FAC6F6072C2E47BD005410F5 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FAC6F6062C2E47BD005410F5 /* SnapKit-Dynamic */; };
+		FAC6F6092C2E4813005410F5 /* ReliabilityViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6F6082C2E4813005410F5 /* ReliabilityViewCell.swift */; };
+		FAC6F60B2C2E4855005410F5 /* ChipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6F60A2C2E4855005410F5 /* ChipsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,9 @@
 		FAC6F5F52C2E46D8005410F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC6F5F82C2E46D8005410F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC6F5FA2C2E46D8005410F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC6F6012C2E47A0005410F5 /* ChipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsView.swift; sourceTree = "<group>"; };
+		FAC6F6082C2E4813005410F5 /* ReliabilityViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityViewCell.swift; sourceTree = "<group>"; };
+		FAC6F60A2C2E4855005410F5 /* ChipsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC6F6052C2E47BD005410F5 /* SnapKit in Frameworks */,
+				FAC6F6072C2E47BD005410F5 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,7 @@
 		FAC6F5EB2C2E46D6005410F5 /* chips */ = {
 			isa = PBXGroup;
 			children = (
+				FAC6F6002C2E4789005410F5 /* Chips */,
 				FAC6F5EC2C2E46D6005410F5 /* AppDelegate.swift */,
 				FAC6F5EE2C2E46D6005410F5 /* SceneDelegate.swift */,
 				FAC6F5F02C2E46D6005410F5 /* ViewController.swift */,
@@ -65,6 +76,16 @@
 				FAC6F5FA2C2E46D8005410F5 /* Info.plist */,
 			);
 			path = chips;
+			sourceTree = "<group>";
+		};
+		FAC6F6002C2E4789005410F5 /* Chips */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6F6012C2E47A0005410F5 /* ChipsView.swift */,
+				FAC6F6082C2E4813005410F5 /* ReliabilityViewCell.swift */,
+				FAC6F60A2C2E4855005410F5 /* ChipsModel.swift */,
+			);
+			path = Chips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,10 @@
 			dependencies = (
 			);
 			name = chips;
+			packageProductDependencies = (
+				FAC6F6042C2E47BD005410F5 /* SnapKit */,
+				FAC6F6062C2E47BD005410F5 /* SnapKit-Dynamic */,
+			);
 			productName = chips;
 			productReference = FAC6F5E92C2E46D6005410F5 /* chips.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = FAC6F5E02C2E46D6005410F5;
+			packageReferences = (
+				FAC6F6032C2E47BD005410F5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FAC6F5EA2C2E46D6005410F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC6F6022C2E47A0005410F5 /* ChipsView.swift in Sources */,
+				FAC6F60B2C2E4855005410F5 /* ChipsModel.swift in Sources */,
 				FAC6F5F12C2E46D6005410F5 /* ViewController.swift in Sources */,
 				FAC6F5ED2C2E46D6005410F5 /* AppDelegate.swift in Sources */,
 				FAC6F5EF2C2E46D6005410F5 /* SceneDelegate.swift in Sources */,
+				FAC6F6092C2E4813005410F5 /* ReliabilityViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +394,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAC6F6032C2E47BD005410F5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAC6F6042C2E47BD005410F5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAC6F6032C2E47BD005410F5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FAC6F6062C2E47BD005410F5 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAC6F6032C2E47BD005410F5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAC6F5E12C2E46D6005410F5 /* Project object */;
 }
